@@ -12,4 +12,6 @@ def speak(text):
     engine.setProperty('volume', 1) # Adjust the volume (0.0 to 1.0)
 
     engine.say(text)
-    engine.runAndWait()
+    
+    engine.runAndWait() 
+    engine.stop()  # Stop the speech engine when done speaking
